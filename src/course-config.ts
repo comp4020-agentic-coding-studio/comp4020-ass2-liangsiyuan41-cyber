@@ -46,17 +46,17 @@ export const slopCourseMetaSchema = z
 // The code's last three digits were assigned to this repo when it was
 // provisioned, and no other course in the cohort has them. Change the first
 // digit to your course's level (and `level` to match); keep the other three.
-// STARTER_CONTENT: replace this course record, then remove this comment.
 export const courseMeta = slopCourseMetaSchema.parse({
   code: "SLOP1677",
-  title: "Course Title Goes Here",
+  title: "Three Shots Ahead: Pool, Physics & Strategic Thinking",
   session: "Semester 1",
   year: 2027,
   level: 1,
   startDate: "2027-02-22",
   endDate: "2027-05-28",
   description:
-    "One concise paragraph explaining what this course is, who it is for, " +
-    "and why somebody would choose to spend a semester taking it.",
-  tags: ["replace me"],
+    "A 12-week beginner pool course built on one idea: every shot should prepare the next. " +
+    "Complete beginners and casual players progress from aiming and cue-ball contact through " +
+    "spin and positional control to full three-shot planning, safety and table strategy.",
+  tags: ["pool", "strategy", "physics"],
 }) satisfies CourseMetaInput;

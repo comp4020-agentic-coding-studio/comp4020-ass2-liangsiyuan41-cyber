@@ -1,0 +1,67 @@
+---
+// Every week follows the same five-stage structure (enforced as required
+// schema fields in content.config.ts), rendered here as a consistent card
+// grid so weeks stay structurally identical while their content varies.
+interface Props {
+  learn: string;
+  see: string;
+  think: string;
+  play: string;
+  tableCheck: string;
+}
+
+const { learn, see, think, play, tableCheck } = Astro.props;
+
+const stages = [
+  { label: "Learn", text: learn },
+  { label: "See", text: see },
+  { label: "Think", text: think },
+  { label: "Play", text: play },
+  { label: "Table check", text: tableCheck },
+];
+---
+
+<ul class="week-stages" role="list">
+  {
+    stages.map((stage) => (
+      <li class="week-stages__item">
+        <span class="week-stages__label">{stage.label}</span>
+        <p class="week-stages__text">{stage.text}</p>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .week-stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: var(--at-spacing-md);
+    margin: var(--at-spacing-xl) 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .week-stages__item {
+    padding: var(--at-spacing-md);
+    border: 1px solid var(--at-divider);
+    border-radius: var(--at-border-radius);
+    background: var(--at-bg-alt);
+  }
+
+  .week-stages__label {
+    display: block;
+    margin-block-end: var(--at-spacing-xs);
+    color: var(--at-secondary, var(--at-accent));
+    font-size: var(--at-font-size-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .week-stages__text {
+    margin: 0;
+    color: var(--at-text-secondary);
+    font-size: var(--at-font-size-sm);
+  }
+</style>

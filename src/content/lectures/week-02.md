@@ -7,8 +7,8 @@ date: 2027-03-01
 teachers:
   - idris-fenn
 related:
-  - sessions/02-first-review
-  - assessments/assignment-1
+  - sessions/week-02
+  - assessments/reading-the-table
 ---
 
 <!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->

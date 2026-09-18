@@ -1,10 +1,9 @@
 ---
-import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
-import SpecList from "astro-course-university/components/SpecList.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
 import TeachingTeam from "../../components/TeachingTeam.astro";
+import WeekStages from "../../components/WeekStages.astro";
 import { formatCourseDate } from "../../lib/dates";
 import { graphCollections, sessionLabels, siteConfig } from "../../site-config";
 
@@ -14,20 +13,30 @@ export async function getStaticPaths() {
 }
 
 const { session } = Astro.props;
-const { Content } = await render(session);
 ---
 
 <ContentLayout
-  title={`Week ${session.data.week} ${sessionLabels.singular}: ${session.data.title}`}
+  title={`${sessionLabels.singular} ${session.data.week}: ${session.data.title}`}
   description={session.data.description}
   {...siteConfig}
 >
   <p><strong>{formatCourseDate(session.data.date)}</strong></p>
-  <Content />
-  <SpecList spec={session.data.spec}>
-    What you bring to the session. Written so a reader can tell whether it has
-    been met without asking you.
-  </SpecList>
+
+  <section aria-labelledby="objectives">
+    <h2 id="objectives">Learning objectives</h2>
+    <ul>
+      {session.data.objectives.map((objective) => <li>{objective}</li>)}
+    </ul>
+  </section>
+
+  <WeekStages
+    learn={session.data.learn}
+    see={session.data.see}
+    think={session.data.think}
+    play={session.data.play}
+    tableCheck={session.data.tableCheck}
+  />
+
   <TeachingTeam teachers={session.data.teachers} />
   <RelatedContent entry={session} collections={graphCollections} />
 </ContentLayout>

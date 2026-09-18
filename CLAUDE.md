@@ -1,11 +1,25 @@
-# Your harness
+# SLOP1677: Three Shots Ahead
 
-This file is yours, and it arrives with no rules in it on purpose --- this note
-is all there is, and it goes when you write your own. The rules you hold the
-agent to are part of what gets marked, so they should be rules you decided on.
+Course site for SLOP1677, a beginner pool course built on one idea: every shot
+should prepare the next. Three learning stages run across 12 weeks — See the
+Shot, Control the Shot, Think Beyond the Shot.
 
-Nothing about the starter is recorded here. The platform under you is fixed and
-documented in `README.md`, and the
-[course website](https://comp.anu.edu.au/courses/comp4020-agentic-coding-studio/)
-publishes this deliverable's brief and spec. Read both before you plan or build;
-what the agent needs to carry from either is your call.
+## Principles
+
+- **Preserve the billiards visual identity.** Dark felt-green background,
+  ivory text, muted metallic gold used sparingly for accents/links/headings —
+  set once in `src/styles/brand.css`. No neon, no cartoon styling, no stock
+  photography; prefer geometric/diagrammatic art over photos.
+- **Maintain the three-stage learning progression** (See / Control / Think
+  Beyond) as the throughline connecting the home page, the Course Overview,
+  and the weekly structure — without collapsing it into a rigid per-week
+  topic map.
+- **Avoid filler course content.** Don't invent detailed weekly teaching
+  content, quiz questions, or lecture material ahead of when it's actually
+  planned and written.
+- **Keep weekly pages structurally consistent, content flexible.** Every week
+  carries the same required fields (objectives, Learn/See/Think/Play/Table
+  Check — enforced in `src/content.config.ts`), but what fills them is free to
+  vary once real content is written.
+- **Prioritise desktop and mobile responsiveness** — verify layouts at both
+  1920×1080 and 390×844 before considering a page change done.

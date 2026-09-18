@@ -39,6 +39,15 @@ export const collections = {
         week: weekSchema,
         date: z.coerce.date(),
         teachers: teacherRefs.optional(),
+        // Every week follows the same five-stage structure, so these are
+        // required rather than freeform body content --- a week authored
+        // without one fails the build instead of silently shipping thin.
+        objectives: z.array(z.string().trim().min(1)).min(1),
+        learn: z.string().trim().min(1),
+        see: z.string().trim().min(1),
+        think: z.string().trim().min(1),
+        play: z.string().trim().min(1),
+        tableCheck: z.string().trim().min(1),
       })
       .loose(),
   }),

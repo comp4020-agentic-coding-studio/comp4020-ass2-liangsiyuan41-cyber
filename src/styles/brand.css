@@ -1,0 +1,53 @@
+/* SLOP1677 "Three Shots Ahead" brand palette for astro-theme-university.
+ *
+ * Deep pool-table green as primary, muted metallic gold as secondary/accent,
+ * a muted slate-teal as tertiary. Imported after the theme styles via
+ * `universityTheme({ brandCss: "/src/styles/brand.css" })`; every semantic
+ * token in tokens.css derives from these three unless hand-tuned below. */
+:root {
+  --at-primary: #0f4a37;
+  --at-secondary: #c9a24a;
+  --at-tertiary: #5b7a86;
+
+  /* Hand-tuned: the derived hover/active greens read muddy against the ivory
+     text this brand uses everywhere, so pin them a little further apart. */
+  --at-primary-hover: #14603f;
+  --at-primary-active: #0b3a2a;
+
+  /* Ivory text on the dark surfaces, rather than the theme's default
+     near-white derived from --at-primary's hue (which stays too green). */
+  --at-text: light-dark(oklch(from var(--at-primary) 20% 0.01 h), oklch(94% 0.014 85));
+  --at-text-secondary: light-dark(
+    oklch(from var(--at-primary) 20% 0.01 h / 78%),
+    oklch(94% 0.014 85 / 78%)
+  );
+  --at-text-muted: light-dark(oklch(from var(--at-primary) 20% 0.01 h / 62%), oklch(94% 0.014 85 / 58%));
+
+  /* Headings, links and accents repoint to the gold secondary rather than the
+     primary green, so structure and emphasis read as metallic accents against
+     the felt-green surfaces --- "muted gold accents only where appropriate". */
+  --at-heading: light-dark(var(--at-primary), var(--at-secondary));
+  --at-accent: var(--at-secondary);
+  --at-accent-hover: oklch(from var(--at-secondary) calc(l + 0.08) c h);
+  --at-accent-soft: light-dark(
+    rgb(from var(--at-secondary) r g b / 10%),
+    rgb(from var(--at-secondary) r g b / 16%)
+  );
+  --at-link: light-dark(oklch(from var(--at-secondary) calc(l - 0.14) c h), var(--at-secondary));
+  --at-link-hover: light-dark(var(--at-primary), oklch(from var(--at-secondary) calc(l + 0.08) c h));
+
+  /* Gold-tinted hairlines instead of green-tinted ones, so borders read as
+     understated metal rather than more felt. */
+  --at-border: light-dark(rgb(from var(--at-secondary) r g b / 35%), rgb(from var(--at-secondary) r g b / 45%));
+  --at-divider: light-dark(rgb(from var(--at-secondary) r g b / 16%), rgb(from var(--at-secondary) r g b / 18%));
+}
+
+/* Hide the theme's decorative "#" heading-anchor glyph everywhere (hover,
+   focus-visible, and the always-on touch-device state). It's already
+   aria-hidden + tabindex="-1" upstream (astro-theme-university markdown.ts),
+   and rehype-slug still gives every heading its id, so removing the glyph
+   changes nothing about heading semantics, structure, or deep-linking --
+   only the visible "#" mouse affordance goes away. */
+.at-heading-anchor {
+  display: none;
+}
