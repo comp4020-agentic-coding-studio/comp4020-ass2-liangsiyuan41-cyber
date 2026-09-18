@@ -1,4 +1,5 @@
 ---
+import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
@@ -13,6 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { session } = Astro.props;
+const { Content } = await render(session);
 ---
 
 <ContentLayout
@@ -36,6 +38,26 @@ const { session } = Astro.props;
     play={session.data.play}
     tableCheck={session.data.tableCheck}
   />
+
+  <Content />
+
+  {
+    session.data.quiz && (
+      <section aria-labelledby="weekly-quiz">
+        <h2 id="weekly-quiz">Weekly quiz</h2>
+        <ol>
+          {session.data.quiz.map((item) => (
+            <li>
+              <p>{item.question}</p>
+              <ol type="A">
+                {item.options.map((option) => <li>{option}</li>)}
+              </ol>
+            </li>
+          ))}
+        </ol>
+      </section>
+    )
+  }
 
   <TeachingTeam teachers={session.data.teachers} />
   <RelatedContent entry={session} collections={graphCollections} />

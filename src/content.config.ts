@@ -48,6 +48,20 @@ export const collections = {
         think: z.string().trim().min(1),
         play: z.string().trim().min(1),
         tableCheck: z.string().trim().min(1),
+        // Optional self-check questions for a week — a lightweight companion
+        // to Table Check, not a graded or interactive quiz system. Each
+        // question is multiple-choice; no correct answer is stored here, since
+        // this content renders straight to a public static page. Weeks
+        // without one simply render no quiz section.
+        quiz: z
+          .array(
+            z.object({
+              question: z.string().trim().min(1),
+              options: z.array(z.string().trim().min(1)).min(2).max(6),
+            }),
+          )
+          .min(1)
+          .optional(),
       })
       .loose(),
   }),

@@ -17,6 +17,11 @@ Shot, Control the Shot, Think Beyond the Shot.
 - **Avoid filler course content.** Don't invent detailed weekly teaching
   content, quiz questions, or lecture material ahead of when it's actually
   planned and written.
+- **Don't invent or correct billiards technique.** Treat the teaching logic
+  supplied by the course designer as authoritative — this is a pool course,
+  and technical correctness on the table matters more than tidy prose. If a
+  technical detail is ambiguous, or a diagram/graphic hasn't been supplied
+  yet, preserve a placeholder or ask rather than guessing.
 - **Keep weekly pages structurally consistent, content flexible.** Every week
   carries the same required fields (objectives, Learn/See/Think/Play/Table
   Check — enforced in `src/content.config.ts`), but what fills them is free to

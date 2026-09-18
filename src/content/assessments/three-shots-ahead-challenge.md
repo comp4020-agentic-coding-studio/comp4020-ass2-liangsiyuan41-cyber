@@ -14,7 +14,8 @@ marking:
     whether the student can explain the plan they were playing to.
 spec:
   - a shot plan is stated before play begins, covering at least three shots
-  - position for the next shot is visibly considered, not just the current pot
+  - position for the next shot is visibly considered, not just the current pot, drawing on point, zone or route positioning as appropriate
+  - at least one attack, safety or recovery decision is made and explained during the run
   - the student can explain a decision when asked
 related:
   - cue-ball-control-challenge
