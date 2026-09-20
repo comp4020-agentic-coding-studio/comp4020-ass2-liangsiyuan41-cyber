@@ -54,7 +54,7 @@ tableCheck: >
   <text x="60" y="158" fill="var(--at-text)" font-size="12">Straight delivery</text>
 
   <rect x="270" y="10" width="200" height="150" rx="6" fill="var(--at-bg-alt)" stroke="var(--at-divider)" stroke-width="1" />
-  <path d="M 370 140 C 390 100, 340 60, 400 25" fill="none" stroke="var(--at-secondary)" stroke-width="2" stroke-dasharray="6 4" />
+  <path d="M 370 140 L 410 25" fill="none" stroke="var(--at-secondary)" stroke-width="2" stroke-dasharray="6 4" />
   <circle cx="370" cy="140" r="8" fill="#f2ead9" />
   <line x1="280" y1="20" x2="460" y2="20" stroke="var(--at-primary)" stroke-width="6" />
   <text x="315" y="158" fill="var(--at-text)" font-size="12">Cue drifting off-line</text>

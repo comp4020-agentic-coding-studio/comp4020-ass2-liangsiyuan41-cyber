@@ -11,9 +11,9 @@ multipleChoice:
       - It depends only on speed, not contact height.
   - question: Why can't "hit lower, it always draws farther" be treated as a reliable rule?
     options:
-      - Because cue speed and spin interact, so the same spin behaves differently at different speeds.
       - Because draw shots are illegal in this course's rules.
       - Because contact height has no effect on the cue ball.
+      - Because cue speed and spin interact, so the same spin behaves differently at different speeds.
       - Because draw only works on angled shots.
 shortAnswer:
   question: >

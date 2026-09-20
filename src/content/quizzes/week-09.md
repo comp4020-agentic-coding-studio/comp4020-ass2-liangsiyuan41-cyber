@@ -5,10 +5,10 @@ week: 9
 multipleChoice:
   - question: What is this week's core principle?
     options:
-      - Don't play for a point. Play for an area.
       - Always aim for the smallest possible target.
       - Zones remove the need to think about the next ball.
       - Zone Positioning replaces Point Positioning entirely.
+      - Don't play for a point. Play for an area.
   - question: Why is a zone generally more forgiving than an exact point?
     options:
       - Small errors in speed or angle are less likely to ruin the next shot when the target is an area.

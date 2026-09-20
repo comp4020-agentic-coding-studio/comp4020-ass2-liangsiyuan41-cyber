@@ -5,14 +5,14 @@ week: 2
 multipleChoice:
   - question: Which is the correct order for the first three steps of the setup?
     options:
-      - Observe the shot line, enter the shot line, grip.
       - Grip, observe the shot line, enter the shot line.
       - Enter the shot line, grip, observe the shot line.
       - Bridge, observe the shot line, grip.
+      - Observe the shot line, enter the shot line, grip.
   - question: What should you check before you lower into the stance, not after?
     options:
-      - That you have read the shot line and are aligned with it.
       - That the cue tip has enough chalk.
+      - That you have read the shot line and are aligned with it.
       - That the pocket is fully open.
       - That the object ball has stopped moving.
 shortAnswer:

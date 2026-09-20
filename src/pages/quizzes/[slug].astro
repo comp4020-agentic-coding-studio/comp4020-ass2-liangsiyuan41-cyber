@@ -19,8 +19,9 @@ const { quiz } = Astro.props;
 >
   <p>
     This weekly quiz contributes to the Weekly Online Quizzes component of
-    the course grade. Responses entered on this course site are not
-    automatically saved or submitted.
+    the course grade (10% overall; best 10 of 12 quizzes count, each worth
+    1%). Responses entered on this course site are not automatically saved
+    or submitted.
   </p>
 
   <form id="weekly-quiz-form">
@@ -31,7 +32,7 @@ const { quiz } = Astro.props;
             {index + 1}. {item.question}
           </legend>
           <div class="quiz-options">
-            {item.options.map((option, optionIndex) => (
+            {item.options.map((option) => (
               <label>
                 <input type="radio" name={`mcq-${index}`} value={option} required />
                 {option}

@@ -5,15 +5,15 @@ week: 12
 multipleChoice:
   - question: Which sequence best describes this week's approach to a full layout?
     options:
-      - Read, plan, aim, set up, execute, control, position, reassess.
       - Aim, execute, forget, repeat.
+      - Read, plan, aim, set up, execute, control, position, reassess.
       - Plan once at the start and never reassess.
       - Pot the easiest ball first, every time, with no other consideration.
   - question: What does "three shots ahead" mean by the end of this course?
     options:
-      - Planning a sequence of shots while staying ready to reassess and update the plan after each result.
       - Committing to a fixed plan that is never changed once decided.
       - Only thinking about the very next shot.
+      - Planning a sequence of shots while staying ready to reassess and update the plan after each result.
       - A rule that applies only during the final assessment.
 shortAnswer:
   question: >

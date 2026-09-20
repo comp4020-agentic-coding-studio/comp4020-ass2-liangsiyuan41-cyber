@@ -5,9 +5,9 @@ week: 1
 multipleChoice:
   - question: Which of these correctly names all four things you should identify before every shot?
     options:
-      - The cue ball, the object ball, the target pocket, and the rail you're playing off.
       - The cue ball, the chalk, the cue tip, and the score.
       - The object ball, the opponent, the referee, and the clock.
+      - The cue ball, the object ball, the target pocket, and the rail you're playing off.
       - The pocket, the rail, the felt colour, and the cue weight.
   - question: Under the course rules used this week, whose turn is it after a foul?
     options:

@@ -12,19 +12,16 @@ related:
   - sessions/week-01
 ---
 
-<!-- STARTER_CONTENT: replace this lecture, then remove this comment. -->
-
-Replace this page. A lecture entry says what was covered and links to the pages
-that own the detail, so the lecture stays short and nothing is explained twice.
-
-The `related:` ref above is a graph edge: it renders on this page and on the
-session's, so declare a connection once, on whichever side is convenient.
-
-The page renders its `slides:` link automatically. Decks are markdown too,
-under `src/decks/`; the path is part of the lecture's API metadata.
+An orientation to the table and the game: what a complete beginner needs
+before technical stroke instruction begins. See [Week 1](/sessions/week-01/)
+for the full session.
 
 ## Outline
 
-- what the course is for
-- how the weeks are shaped
-- what to do before the first session
+- The table and equipment — the cue ball, object balls, pockets, cushions and
+  the basic parts of the cue.
+- The beginner course rules — the basic objective of pool and how turns pass
+  between players.
+- Etiquette and safety around the table and other players.
+- Reading the table before shooting — identifying the cue ball, the object
+  ball, the target pocket and the rail before every shot.

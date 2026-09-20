@@ -11,10 +11,10 @@ multipleChoice:
       - Recovery means always repeating the original plan.
   - question: A low-percentage pot would leave an easy shot behind if missed. What does this week suggest weighing before playing it?
     options:
-      - The risk of missing against the reward of potting, including what's left behind if it fails.
       - Only the distance to the pocket.
       - Only how many spectators are watching.
       - Nothing — always attempt the pot regardless of risk.
+      - The risk of missing against the reward of potting, including what's left behind if it fails.
 shortAnswer:
   question: >
     A low-percentage pot would leave an easy shot behind if missed. Explain

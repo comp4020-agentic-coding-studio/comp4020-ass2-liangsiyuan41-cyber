@@ -5,9 +5,9 @@ week: 8
 multipleChoice:
   - question: What is the single main question Point Positioning asks?
     options:
-      - Can I make the cue ball finish at this specific location?
       - Which side of the next ball should I be on?
       - What route should the cue ball travel?
+      - Can I make the cue ball finish at this specific location?
       - Should I attack or play safe?
   - question: What happens to the margin for error as the target point becomes smaller and more exact?
     options:
