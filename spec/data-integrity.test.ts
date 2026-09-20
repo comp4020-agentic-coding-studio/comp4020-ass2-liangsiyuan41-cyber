@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { describe, expect, it } from "vitest";
+import { recurringGradingComponents } from "../src/lib/grading";
 
 interface ApiNode {
   id: string;
@@ -32,5 +33,19 @@ describe("course data integrity", () => {
       expect(date >= api.course.startDate, `${node.id} falls before teaching starts`).toBe(true);
       expect(date <= api.course.endDate, `${node.id} falls after teaching ends`).toBe(true);
     }
+  });
+
+  it("grading components add up to 100%", () => {
+    const assessmentWeight = api.nodes
+      .filter((node) => node.type === "assessments")
+      .reduce((sum, node) => sum + Number(node.meta?.weight ?? 0), 0);
+    const recurringWeight = recurringGradingComponents.reduce(
+      (sum, component) => sum + component.weight,
+      0,
+    );
+    expect(
+      assessmentWeight + recurringWeight,
+      "assessments collection weight + recurring components should total 100",
+    ).toBe(100);
   });
 });
