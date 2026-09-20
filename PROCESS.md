@@ -1,9 +1,5 @@
 # Process overview
 
-<!-- TEMPLATE: this file is a shape to fill in, not a form. Replace everything
-     in it with your own overview, and delete this comment — `pnpm
-     check:evidence` will remind you if it's still here. -->
-
 Written by you, for a reader: how you got from the brief to the harness and
 agentic workflow behind this submission. Markers read this file and follow its
 citations; they don't trawl the repo for evidence you didn't point at.
@@ -16,31 +12,52 @@ cover every deliverable.
 
 ## What I built
 
-One paragraph: the thing, and the idea behind it.
+I built SLOP1677, a 12-week beginner pool course. Most university courses are
+reading and writing, so I wanted something physical, without needing high
+fitness or prior skill. Pool fit well because it's physical but also needs
+thinking, planning and focus, and it's easy for a beginner to start. The
+site's first version was set up in
+[`e4c6017`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-liangsiyuan41-cyber/commit/e4c6017).
 
 ## How I got here
 
-The account of the process: how the work actually went, and how you knew the
-result was right. Tell it in whatever order makes it clear. A weekly prototype
-needs a paragraph or two; an assignment needs more.
+I used to work part-time as a pool coach, so most of the content came from my
+own knowledge, and AI helped organise and write it clearly. I planned the
+12 weeks as a gradual path: table knowledge and rules first, then stance,
+straight shots and angled shots, then cue-ball control (stop, follow, draw,
+side spin), then Point, Zone and Route Positioning, and finally attack,
+safety, recovery and full-table planning. This structure was finished in
+[`3a67b68`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-liangsiyuan41-cyber/commit/3a67b68).
+The site can't give real coaching, so I tried to make the theory as complete
+as possible.
 
-Cite the record as you go, as links whose text is the commit hash or range and
-whose target is this repo's commit or compare URL, so a reader clicks straight
-to the evidence:
+Building the site caused problems because the AI didn't always understand how
+pool balls behave. I had a few bad image attempts. In Week 3, the AI drew
+the cue ball moving along a curved path when the stroke was off-line, but that
+drill should show a straight path drifting left or right from the intended
+line. After finding this, I checked the images and content more carefully.
 
-- one commit: [`a1b2c3d`](https://github.com/YOUR-ORG/YOUR-REPO/commit/a1b2c3d)
-- a range:
-  [`a1b2c3d...e4f5a6b`](https://github.com/YOUR-ORG/YOUR-REPO/compare/a1b2c3d...e4f5a6b)
+After that, I stopped letting the AI invent diagrams when the geometry was
+uncertain. I drew some teaching ideas myself and used ChatGPT to recreate them
+in a clearer, more consistent style, which made them more accurate. I also
+tried to protect the course structure I'd already designed, instead of
+letting the coding agent change it freely. The teaching images, the Week 4
+slides and the bigger content update were included in
+[`1e2bfdc`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-liangsiyuan41-cyber/commit/1e2bfdc).
 
-To pair a prompt with the commit it produced, quote the prompt (curated, not a
-full transcript) next to the citation:
+I changed the weekly quizzes as I went. At first the questions sat at the
+bottom of each week page. I turned them into separate quiz pages with two
+multiple-choice questions and one short-answer question each. Later I
+noticed Claude had put the correct answer as the first option in almost every
+question, so I asked it to keep the questions the same but move the correct
+answers so A, B, C and D were used evenly. This quiz rework, along with the
+grading fixes and final site polish, was finished in
+[`fbc2c5e`](https://github.com/comp4020-agentic-coding-studio/comp4020-ass2-liangsiyuan41-cyber/commit/fbc2c5e).
 
-> the prompt, verbatim
-
-Screenshots are welcome where one carries the point better than a sentence does.
-Commit the file to this repo and link it with a **relative** path, which is what
-makes it render on GitHub: `![alt text](docs/before.png)`. Images don't count
-towards the word count and don't replace the citation.
+What I learned is that the AI worked best when I gave it clear decisions
+instead of asking it to make the teaching calls for me. My knowledge mattered
+most for checking technical accuracy, and the AI was most useful for
+organising content, building the site and improving the presentation.
 
 ## Before you ship
 
