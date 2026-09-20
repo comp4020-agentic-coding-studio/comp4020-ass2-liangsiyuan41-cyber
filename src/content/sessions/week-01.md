@@ -33,31 +33,6 @@ play: >
 tableCheck: >
   A short knowledge check on table anatomy, the basic rules, and simple
   legal/illegal decisions.
-quiz:
-  - question: Which of these correctly names all four things you should identify before every shot?
-    options:
-      - The cue ball, the object ball, the target pocket, and the rail you're playing off.
-      - The cue ball, the chalk, the cue tip, and the score.
-      - The object ball, the opponent, the referee, and the clock.
-      - The pocket, the rail, the felt colour, and the cue weight.
-  - question: Under the course rules used this week, whose turn is it after a foul?
-    options:
-      - The other player's, as with most common turn-taking rules.
-      - The same player's, so they can retry the shot.
-      - It depends on which pocket was involved.
-      - Play stops until an instructor decides.
-  - question: A shot is played that pots no ball and leaves the cue ball touching a cushion. On its own, is this obviously illegal?
-    options:
-      - No — not potting anything is not automatically a foul.
-      - Yes — any shot that fails to pot a ball is illegal.
-      - Yes — touching a cushion is always a foul.
-      - It cannot be judged without knowing the score.
-  - question: What is the main purpose of Week 1?
-    options:
-      - Becoming comfortable identifying the table, the balls and the basic rules.
-      - Mastering advanced position play.
-      - Learning to apply side spin accurately.
-      - Memorising an official competition rulebook.
 ---
 
 ## The table at a glance
@@ -99,6 +74,3 @@ regulations.
 - Which pocket is the most natural target for the object ball above?
 - Which of two shots shown to you is obviously legal, and which is obviously illegal, under the course rules?
 - What should you check before taking any shot at all?
-
-Approved worked examples for this section will be added once the course
-designer supplies specific table situations to use.

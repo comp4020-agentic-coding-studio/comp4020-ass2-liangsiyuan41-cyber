@@ -51,3 +51,110 @@
 .at-heading-anchor {
   display: none;
 }
+
+/* Generic gold call-to-action button, used for the "View Lecture Slides"
+   link (src/pages/sessions/[slug].astro, linking out to a PDF deck under
+   public/slides/) and the "Take Week X Quiz" link (linking to
+   src/pages/quizzes/[slug].astro). Solid gold on dark green, rather than the
+   underlined inline-link treatment used elsewhere, so it reads as a distinct
+   action button next to the page's body text instead of blending into it. */
+.cta-button {
+  display: inline-block;
+  background-color: var(--at-accent);
+  color: var(--at-primary);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.65em 1.4em;
+  border-radius: 0.35em;
+  border: 1px solid var(--at-border);
+}
+
+.cta-button:hover,
+.cta-button:focus-visible {
+  background-color: var(--at-accent-hover);
+}
+
+/* Weekly quiz page (src/pages/quizzes/[slug].astro): each question is a
+   fieldset so its options are grouped for assistive tech, styled as a
+   quiet card rather than a bare list so two MCQs and a short-answer
+   question read as distinct steps down the page. */
+.quiz-question {
+  border: 1px solid var(--at-divider);
+  border-radius: 0.5em;
+  padding: 1em 1.25em;
+  margin-block: 1.25em;
+}
+
+.quiz-question legend {
+  font-weight: 600;
+  padding-inline: 0.25em;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  margin-top: 0.75em;
+}
+
+.quiz-options label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6em;
+  cursor: pointer;
+}
+
+.quiz-question textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.75em;
+  font: inherit;
+  padding: 0.6em 0.75em;
+  border-radius: 0.35em;
+  border: 1px solid var(--at-border);
+  background-color: var(--at-bg-alt);
+  color: var(--at-text);
+  resize: vertical;
+}
+
+/* Teaching diagrams embedded in weekly session content
+   (src/content/sessions/*.md). Source photos/diagrams are supplied at fixed
+   pixel dimensions by the course designer and must never be cropped or
+   re-encoded -- these rules only constrain how much screen space each one
+   occupies. `.teaching-image--portrait` / `--portrait-dense` / `--landscape`
+   are attached by src/lib/rehype-teaching-images.ts, matched against each
+   image's filename, since plain Markdown image syntax has no attribute for a
+   class.
+
+   Sized deliberately small: these are supporting figures inside the lesson
+   text, not hero images, and an oversized image is harder for a reader to
+   scale down than a small one is to zoom in on. Width-based (not
+   viewport-height-based) so a portrait image's on-page footprint stays
+   predictable regardless of screen height. Below 641px only the base rule
+   applies, so mobile gets the full content width instead of the desktop cap. */
+.teaching-image {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 641px) {
+  /* Standard portrait photos/diagrams. */
+  .teaching-image--portrait {
+    max-width: 360px;
+  }
+
+  /* Denser portrait diagrams carrying more labels/text, given a little more
+     room to stay legible. */
+  .teaching-image--portrait-dense {
+    max-width: 420px;
+  }
+
+  /* Wide table/route photos. */
+  .teaching-image--landscape {
+    max-width: 650px;
+  }
+}

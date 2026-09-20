@@ -19,8 +19,8 @@ learn: >
   speed control — a small error can send the cue ball too far, too short,
   or onto the wrong angle for the next shot.
 see: >
-  A placeholder stands in for an approved diagram showing one exact target
-  point, a small error short, and a small error long.
+  Diagrams show one exact target point, a small error short, and a small
+  error long.
 think: >
   Is point positioning appropriate for this simple position problem, or is
   the target too demanding?
@@ -29,31 +29,6 @@ play: >
 tableCheck: >
   Pot the object ball and finish the cue ball inside or close to a small
   target area.
-quiz:
-  - question: What is the single main question Point Positioning asks?
-    options:
-      - Can I make the cue ball finish at this specific location?
-      - Which side of the next ball should I be on?
-      - What route should the cue ball travel?
-      - Should I attack or play safe?
-  - question: What happens to the margin for error as the target point becomes smaller and more exact?
-    options:
-      - It gets smaller — precision and margin for error trade off against each other.
-      - It gets larger.
-      - It stays the same regardless of target size.
-      - Margin for error only depends on spin, not target size.
-  - question: Point Positioning mainly combines speed control with which other skill from this course?
-    options:
-      - Stop, follow and draw from Week 6.
-      - Side spin from Week 7.
-      - Safety play from Week 11.
-      - The pre-shot routine alone, with no spin control.
-  - question: According to this week, what question comes after "can I stop here?"
-    options:
-      - Which side of the next ball should I be on?
-      - How many rails should the cue ball use?
-      - Should I attack this ball?
-      - Is this shot legal?
 ---
 
 ## A note on these labels
@@ -89,7 +64,8 @@ The next question is not: "Can I stop here?"
 
 It is: "Which side of the next ball should I be on?"
 
-> **Diagram placeholder.** An approved diagram showing one exact target
-> point, a small error short, and a small error long is planned for this
-> section. It is not yet stored in this repository and has not been drawn
-> here. It will be inserted once supplied by the course designer.
+![Overhead table diagram of a point-positioning shot: the cue ball travels to one exact target point in the correct half of the landing area to set up the next ball.](../../assets/teaching/week-08-point-positioning.jpg)
+
+![Overhead table diagram of the same shot played with too little speed: the cue ball falls short of the target point.](../../assets/teaching/week-08-too-soft.jpg)
+
+![Overhead table diagram of the same shot played with too much speed: the cue ball travels past the target point.](../../assets/teaching/week-08-too-hard.jpg)

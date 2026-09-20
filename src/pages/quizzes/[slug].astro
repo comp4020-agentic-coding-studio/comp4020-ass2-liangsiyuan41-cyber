@@ -1,0 +1,75 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+import Callout from "astro-theme-university/components/Callout.astro";
+import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { sessionLabels, siteConfig } from "../../site-config";
+
+export async function getStaticPaths() {
+  const quizzes = await getPublishedCollection("quizzes");
+  return quizzes.map((quiz) => ({ params: { slug: quiz.id }, props: { quiz } }));
+}
+
+const { quiz } = Astro.props;
+---
+
+<ContentLayout
+  title={`${sessionLabels.singular} ${quiz.data.week} Quiz: ${quiz.data.title}`}
+  description={quiz.data.description}
+  {...siteConfig}
+>
+  <p>
+    This weekly quiz contributes to the Weekly Online Quizzes component of
+    the course grade. Responses entered on this course site are not
+    automatically saved or submitted.
+  </p>
+
+  <form id="weekly-quiz-form">
+    {
+      quiz.data.multipleChoice.map((item, index) => (
+        <fieldset class="quiz-question">
+          <legend>
+            {index + 1}. {item.question}
+          </legend>
+          <div class="quiz-options">
+            {item.options.map((option, optionIndex) => (
+              <label>
+                <input type="radio" name={`mcq-${index}`} value={option} required />
+                {option}
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      ))
+    }
+
+    <fieldset class="quiz-question">
+      <legend>3. {quiz.data.shortAnswer.question}</legend>
+      <textarea name="short-answer" rows="5" placeholder="Write your answer here..." />
+    </fieldset>
+
+    <p>
+      <button type="submit" class="cta-button">Complete Quiz</button>
+    </p>
+  </form>
+
+  <div id="quiz-confirmation" hidden>
+    <Callout type="tip">
+      <p>
+        <strong>Quiz completed on this page.</strong> Make sure you follow the
+        course submission instructions for your response to be formally
+        recorded.
+      </p>
+    </Callout>
+  </div>
+</ContentLayout>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>("#weekly-quiz-form");
+  const confirmation = document.querySelector<HTMLDivElement>("#quiz-confirmation");
+
+  form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    confirmation?.removeAttribute("hidden");
+    confirmation?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+</script>

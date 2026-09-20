@@ -29,31 +29,6 @@ play: >
 tableCheck: >
   Tutor or self-check: can the student repeat the setup in the correct
   sequence, in order, without skipping a step?
-quiz:
-  - question: Which is the correct order for the first three steps of the setup?
-    options:
-      - Observe the shot line, enter the shot line, grip.
-      - Grip, observe the shot line, enter the shot line.
-      - Enter the shot line, grip, observe the shot line.
-      - Bridge, observe the shot line, grip.
-  - question: What should you check before you lower into the stance, not after?
-    options:
-      - That you have read the shot line and are aligned with it.
-      - That the cue tip has enough chalk.
-      - That the pocket is fully open.
-      - That the object ball has stopped moving.
-  - question: A student's cue keeps drifting sideways during the stroke. Which setup step most likely needs attention first?
-    options:
-      - The grip — it may be too tight to let the cue move naturally.
-      - The choice of pocket.
-      - The colour of the object ball.
-      - The position of the referee.
-  - question: For a left-handed player, how should the left/right positioning described in this lesson be applied?
-    options:
-      - Mirrored — swap left and right relative to the right-handed description.
-      - Exactly as written, without any change.
-      - Only the bridge hand changes; everything else stays the same.
-      - Left-handed players should use a completely different sequence.
 ---
 
 ## The setup sequence
@@ -84,6 +59,12 @@ quiz:
    movement.
 8. **Warm-up strokes.** Before striking, make smooth practice strokes with
    a relaxed grip, checking that the cue continues along the intended line.
+
+## Reference photos
+
+![Annotated photo of a player's stance: cue alongside the chest, upper body forming a right triangle, chin close to the cue, bridge hand roughly one palm from the cue ball, support leg bent to the side, weight-bearing leg straight and vertical, feet shoulder-width apart.](../../assets/teaching/week-02-stance.jpg)
+
+![Reference sheet of common bridge hand shapes on the cloth, including the standard open bridge and several variations for rail, closed and elevated positions.](../../assets/teaching/week-02-bridge.jpg)
 
 ## A note for left-handed players
 

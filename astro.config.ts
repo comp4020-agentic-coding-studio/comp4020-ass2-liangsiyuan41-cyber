@@ -3,6 +3,7 @@ import courseGraph from "astro-course-university";
 import universityTheme from "astro-theme-university";
 import { astromotion, deckRemarkPlugins } from "astromotion";
 import { courseMeta } from "./src/course-config.ts";
+import rehypeTeachingImages from "./src/lib/rehype-teaching-images.ts";
 import { courseApiCollections } from "./src/site-config.ts";
 import { gitOrigin, resolveDeployment } from "./scripts/pages-base.ts";
 
@@ -30,6 +31,13 @@ export default defineConfig({
       // handed to it rather than registered separately. Each one gates on
       // `.deck.mdx`, so ordinary pages are untouched.
       extraRemarkPlugins: deckRemarkPlugins,
+      // Tags specific teaching-diagram <img>s (by filename) with a
+      // portrait/landscape presentation class -- see
+      // src/lib/rehype-teaching-images.ts and the `.teaching-image` rules in
+      // brand.css. Markdown image syntax has no class attribute, so this is
+      // the only way to size those images without touching the
+      // curriculum/image mapping in the session markdown itself.
+      extraRehypePlugins: [rehypeTeachingImages],
     }),
     courseGraph({
       collections: courseApiCollections,

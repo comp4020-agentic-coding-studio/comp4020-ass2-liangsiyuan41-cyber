@@ -18,8 +18,9 @@ learn: >
   comes next, and reassess. The aim is to practise thinking three shots
   ahead across a whole run, not just on a single shot when asked to.
 see: >
-  A placeholder stands in for an approved diagram showing a full table
-  layout with a suggested shot order and reasoning.
+  Reading a full layout means visually scanning which balls are
+  available, where the difficult balls sit relative to the easier ones,
+  and how a chosen shot order affects position for what comes next.
 think: >
   Given a full layout, what shot order makes sense, and why — considering
   position, not just which balls are easiest to pot?
@@ -29,31 +30,6 @@ play: >
 tableCheck: >
   Play a full layout, explaining your shot order and at least one
   position or safety decision along the way.
-quiz:
-  - question: Which sequence best describes this week's approach to a full layout?
-    options:
-      - Read, plan, aim, set up, execute, control, position, reassess.
-      - Aim, execute, forget, repeat.
-      - Plan once at the start and never reassess.
-      - Pot the easiest ball first, every time, with no other consideration.
-  - question: Besides which ball is easiest to pot, what else should shot-order planning consider?
-    options:
-      - Position for the following shots, and which balls are harder to reach later.
-      - Only the colour of the balls.
-      - Only the number of spectators.
-      - Nothing else — potting difficulty is the only factor.
-  - question: Give the best description of a decision that uses Route Positioning within a longer run.
-    options:
-      - Choosing a path for the cue ball, possibly using a rail, that keeps the shot after next open.
-      - Choosing to hide the cue ball behind another ball.
-      - Choosing the exact single point where the cue ball should stop.
-      - Choosing which ball to pot first based on colour.
-  - question: What does "three shots ahead" mean by the end of this course?
-    options:
-      - Planning a sequence of shots while staying ready to reassess and update the plan after each result.
-      - Committing to a fixed plan that is never changed once decided.
-      - Only thinking about the very next shot.
-      - A rule that applies only during the final assessment.
 ---
 
 ## Reading the whole table
@@ -86,8 +62,3 @@ habit applied while reading any layout: this shot, the one it sets up, and
 the one after that. Planning three shots does not mean refusing to change
 the plan. A good player reassesses and updates the plan after every
 result, not only when something goes wrong.
-
-> **Diagram placeholder.** An approved diagram showing a full table layout
-> with a suggested shot order and reasoning is planned for this section.
-> It is not yet stored in this repository and has not been drawn here. It
-> will be inserted once supplied by the course designer.

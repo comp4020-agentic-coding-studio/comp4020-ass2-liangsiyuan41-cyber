@@ -19,9 +19,9 @@ learn: >
   own theme, planning a three-shot sequence rather than treating each shot
   in isolation, becomes a concrete table skill rather than a slogan.
 see: >
-  A placeholder stands in for an approved diagram showing a three-ball
-  layout with a chosen cue-ball route connecting the current shot to a
-  workable position two shots ahead.
+  A diagram shows a three-ball layout with a chosen cue-ball route
+  connecting the current shot to a workable position two shots ahead,
+  followed by two worked route examples on a real table.
 think: >
   Given three balls, which route keeps the third ball workable, not just
   the second?
@@ -31,31 +31,6 @@ play: >
 tableCheck: >
   Complete a three-ball sequence, explaining beforehand which route the
   cue ball will take and why.
-quiz:
-  - question: What does Route Positioning add that Point and Zone Positioning do not?
-    options:
-      - Attention to the cue ball's whole travel path, not just its finishing point.
-      - A requirement to always use side spin.
-      - A requirement to always play safe.
-      - A single, fixed finishing point.
-  - question: Why does the theme "three shots ahead" need route thinking, not just point or zone thinking?
-    options:
-      - Because the path the cue ball takes can itself open or block the shot after next.
-      - Because route thinking is only needed for safety shots.
-      - Because point and zone thinking already account for the third shot.
-      - Because routes are always safer than direct paths.
-  - question: Which statement does this course make about multi-rail routes?
-    options:
-      - In suitable situations they can offer a larger useful margin — not that they are always easier or safer.
-      - Multi-rail routes are always easier than direct routes.
-      - Multi-rail routes should never be attempted by beginners.
-      - Multi-rail routes remove the need for point or zone thinking.
-  - question: What is the correct way to describe the course's position-play framework?
-    options:
-      - Point gives precision, Zone gives margin, Route gives options.
-      - Point gives margin, Zone gives options, Route gives precision.
-      - Only Route Positioning matters; Point and Zone are optional extras.
-      - The three labels are official terms used across all pool coaching.
 ---
 
 ## Point, zone, route
@@ -96,8 +71,8 @@ This is the concrete version of the course's own theme: three shots ahead
 means the cue ball's path is chosen with the shot after next already in
 mind, not just the shot on the table right now.
 
-> **Diagram placeholder.** An approved diagram showing a three-ball layout
-> with a chosen cue-ball route connecting the current shot to a workable
-> position two shots ahead is planned for this section. It is not yet
-> stored in this repository and has not been drawn here. It will be
-> inserted once supplied by the course designer.
+![Overhead table diagram of a three-ball layout with a marked cue-ball route, a circled waypoint, and dashed lines connecting the current shot to a workable position for the shot after next.](../../assets/teaching/week-10-route-positioning.jpg)
+
+![Worked example: a multi-rail cue-ball route on a real table, using high-middle right English to reach position.](../../assets/teaching/week-10-route-example-1.jpg)
+
+![Worked example: a second multi-rail cue-ball route on a real table, chosen to keep the next two shots open.](../../assets/teaching/week-10-route-example-2.jpg)

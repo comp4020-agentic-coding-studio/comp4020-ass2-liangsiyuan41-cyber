@@ -39,6 +39,14 @@ export const collections = {
         week: weekSchema,
         date: z.coerce.date(),
         teachers: teacherRefs.optional(),
+        // Optional link to a PDF lecture slide deck under public/slides/,
+        // rendered as a "View Lecture Slides" button on the session page ---
+        // separate from the `lectures` collection's `slides` field, which
+        // only accepts the astromotion Reveal.js deck path shape.
+        slides: z
+          .string()
+          .regex(/^\/slides\/[a-z0-9-]+\.pdf$/)
+          .optional(),
         // Every week follows the same five-stage structure, so these are
         // required rather than freeform body content --- a week authored
         // without one fails the build instead of silently shipping thin.
@@ -48,20 +56,6 @@ export const collections = {
         think: z.string().trim().min(1),
         play: z.string().trim().min(1),
         tableCheck: z.string().trim().min(1),
-        // Optional self-check questions for a week — a lightweight companion
-        // to Table Check, not a graded or interactive quiz system. Each
-        // question is multiple-choice; no correct answer is stored here, since
-        // this content renders straight to a public static page. Weeks
-        // without one simply render no quiz section.
-        quiz: z
-          .array(
-            z.object({
-              question: z.string().trim().min(1),
-              options: z.array(z.string().trim().min(1)).min(2).max(6),
-            }),
-          )
-          .min(1)
-          .optional(),
       })
       .loose(),
   }),
@@ -89,6 +83,30 @@ export const collections = {
           .string()
           .regex(/^\/decks\/[a-z0-9-]+\/$/)
           .optional(),
+      })
+      .loose(),
+  }),
+
+  // Dedicated per-week quiz pages, rendered at /quizzes/<slug>/ from
+  // src/pages/quizzes/[slug].astro. File ids match the `sessions` collection
+  // (week-01 … week-12), so a session links to its quiz by convention
+  // (`/quizzes/${session.id}/`) with no reference field, and
+  // astro-broken-links-checker (run by `pnpm check`) verifies every link
+  // actually resolves.
+  quizzes: defineCollection({
+    loader: courseNodeLoader("quizzes"),
+    schema: courseNodeSchema
+      .extend({
+        week: weekSchema,
+        multipleChoice: z
+          .array(
+            z.object({
+              question: z.string().trim().min(1),
+              options: z.array(z.string().trim().min(1)).min(2).max(6),
+            }),
+          )
+          .length(2),
+        shortAnswer: z.object({ question: z.string().trim().min(1) }),
       })
       .loose(),
   }),

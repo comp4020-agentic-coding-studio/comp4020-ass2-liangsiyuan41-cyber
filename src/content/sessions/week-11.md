@@ -19,8 +19,7 @@ learn: >
   covers recovery: what to do when position play hasn't gone to plan and
   you're left with an awkward shot.
 see: >
-  A placeholder stands in for an approved diagram comparing an attacking
-  option and a safety option from the same layout.
+  A diagram shows one example safety route.
 think: >
   Given a layout, is this shot worth attacking, or does a safety option
   give a better outcome overall?
@@ -30,31 +29,6 @@ play: >
 tableCheck: >
   Given a difficult layout, explain your decision — attack or play safe —
   before playing it.
-quiz:
-  - question: What is this week's core principle?
-    options:
-      - Good pool is not always about potting a ball.
-      - Every shot should be an attacking shot.
-      - Safety shots are only for advanced players.
-      - Recovery means always repeating the original plan.
-  - question: Which of these is a basic safety technique introduced this week?
-    options:
-      - Hiding the cue ball, leaving distance, or using a blocker ball.
-      - Always striking with maximum side spin.
-      - Always potting the nearest ball regardless of position.
-      - Ignoring the object ball entirely.
-  - question: A low-percentage pot would leave an easy shot behind if missed. What does this week suggest weighing before playing it?
-    options:
-      - The risk of missing against the reward of potting, including what's left behind if it fails.
-      - Only the distance to the pocket.
-      - Only how many spectators are watching.
-      - Nothing — always attempt the pot regardless of risk.
-  - question: Position play hasn't gone to plan, leaving an awkward shot. What should the player do first?
-    options:
-      - Reassess the table rather than forcing the original plan.
-      - Continue exactly as planned regardless of the new position.
-      - Concede the game.
-      - Switch immediately to maximum side spin.
 ---
 
 ## Attack is not the only option
@@ -85,7 +59,4 @@ pot available, is a safety option now the better choice, and what's the
 simplest way to keep the rest of the layout workable? A three-shot plan is
 not a script — if position changes, reassess before continuing it.
 
-> **Diagram placeholder.** An approved diagram comparing an attacking
-> option and a safety option from the same layout is planned for this
-> section. It is not yet stored in this repository and has not been drawn
-> here. It will be inserted once supplied by the course designer.
+![Overhead table diagram of one example safety route: a multi-rail cue-ball path chosen to leave the cue ball away from an easy follow-up shot.](../../assets/teaching/week-11-safety-route.jpg)

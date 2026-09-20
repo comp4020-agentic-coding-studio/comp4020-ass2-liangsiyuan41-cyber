@@ -3,6 +3,7 @@ import { render } from "astro:content";
 import { getPublishedCollection } from "astro-course-university/content";
 import RelatedContent from "astro-course-university/components/RelatedContent.astro";
 import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
+import { withBase } from "astro-theme-university/url";
 import TeachingTeam from "../../components/TeachingTeam.astro";
 import WeekStages from "../../components/WeekStages.astro";
 import { formatCourseDate } from "../../lib/dates";
@@ -24,6 +25,24 @@ const { Content } = await render(session);
 >
   <p><strong>{formatCourseDate(session.data.date)}</strong></p>
 
+  {
+    session.data.slides && (
+      <section aria-labelledby="lecture-slides">
+        <h2 id="lecture-slides">Lecture slides</h2>
+        <p>
+          <a
+            class="cta-button"
+            href={withBase(session.data.slides)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Week {session.data.week} Lecture Slides
+          </a>
+        </p>
+      </section>
+    )
+  }
+
   <section aria-labelledby="objectives">
     <h2 id="objectives">Learning objectives</h2>
     <ul>
@@ -41,23 +60,20 @@ const { Content } = await render(session);
 
   <Content />
 
-  {
-    session.data.quiz && (
-      <section aria-labelledby="weekly-quiz">
-        <h2 id="weekly-quiz">Weekly quiz</h2>
-        <ol>
-          {session.data.quiz.map((item) => (
-            <li>
-              <p>{item.question}</p>
-              <ol type="A">
-                {item.options.map((option) => <li>{option}</li>)}
-              </ol>
-            </li>
-          ))}
-        </ol>
-      </section>
-    )
-  }
+  <section aria-labelledby="weekly-quiz">
+    <h2 id="weekly-quiz">Weekly quiz</h2>
+    <p>Complete this week's graded quiz.</p>
+    <p>
+      <a
+        class="cta-button"
+        href={withBase(`/quizzes/${session.id}/`)}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Take Week {session.data.week} Quiz
+      </a>
+    </p>
+  </section>
 
   <TeachingTeam teachers={session.data.teachers} />
   <RelatedContent entry={session} collections={graphCollections} />

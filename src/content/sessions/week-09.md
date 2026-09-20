@@ -19,9 +19,8 @@ learn: >
   from a simple three-ball question: which side of the next object ball
   should the cue ball end up on?
 see: >
-  A placeholder stands in for an approved diagram showing a target zone
-  (rather than a single point) and the side of the next object ball the
-  cue ball should finish on.
+  A diagram shows a target zone (rather than a single point) and the side
+  of the next object ball the cue ball should finish on.
 think: >
   Given the cue ball, an object ball and a following ball, which side
   should the cue ball finish on to keep a workable angle for the next
@@ -32,31 +31,6 @@ play: >
 tableCheck: >
   Pot the object ball and finish the cue ball inside an acceptable zone for
   the next shot, not on one exact point.
-quiz:
-  - question: What is this week's core principle?
-    options:
-      - Don't play for a point. Play for an area.
-      - Always aim for the smallest possible target.
-      - Zones remove the need to think about the next ball.
-      - Zone Positioning replaces Point Positioning entirely.
-  - question: What is the main three-ball question Zone Positioning starts from?
-    options:
-      - Which side of the next object ball should the cue ball finish on?
-      - How many rails should the route use?
-      - Should I attack or play safe?
-      - What is the exact distance to the target point?
-  - question: In the chain "Ball 1 → position for Ball 2 → Ball 3", what does position on Ball 2 determine?
-    options:
-      - Whether there is a useful angle to move toward Ball 3.
-      - The colour of Ball 3.
-      - Whether Ball 1 was potted legally.
-      - The weight of the cue used.
-  - question: Why is a zone generally more forgiving than an exact point?
-    options:
-      - Small errors in speed or angle are less likely to ruin the next shot when the target is an area.
-      - Zones are always larger than the table itself.
-      - Zones remove the effect of spin.
-      - Zones are only used when playing safety shots.
 ---
 
 ## From a point to a zone
@@ -93,8 +67,4 @@ where the cue ball should finish. Week 10 asks a different question — not
 just where the cue ball ends up, but how it gets there, and what that path
 sets up further ahead.
 
-> **Diagram placeholder.** An approved diagram showing a target zone
-> (rather than a single point) and the correct side of the next object
-> ball is planned for this section. It is not yet stored in this
-> repository and has not been drawn here. It will be inserted once
-> supplied by the course designer.
+![Overhead table diagram showing a cue-ball landing zone rather than a single point, with the target ball on the far side and a note to land in the upper half of the zone for a workable next shot.](../../assets/teaching/week-09-zone-positioning.jpg)

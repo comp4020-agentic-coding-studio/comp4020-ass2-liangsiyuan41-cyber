@@ -18,9 +18,8 @@ learn: >
   centre). Speed and spin interact, so avoid treating "hit higher" or
   "hit lower" as a guaranteed distance.
 see: >
-  A placeholder stands in for an approved diagram comparing the stun/
-  90-degree reference against a follow path bending forward and a draw
-  path bending backward.
+  A diagram compares the stun/90-degree reference against a follow path
+  bending forward and a draw path bending backward.
 think: >
   Given a desired cue-ball finishing area, decide: stop, follow or draw?
   Given a path, ask which cue action most likely produced it.
@@ -29,31 +28,6 @@ play: >
   stop, one follow, one draw — so the outcomes can be compared directly.
 tableCheck: >
   Complete one basic stop, one follow and one draw task.
-quiz:
-  - question: Which contact height produces a follow shot?
-    options:
-      - Above centre.
-      - Below centre.
-      - Dead centre.
-      - It depends only on speed, not contact height.
-  - question: On an angled shot, is the final separation angle for a follow shot generally more or less than the stun's 90-degree reference?
-    options:
-      - Generally less than 90 degrees.
-      - Generally more than 90 degrees.
-      - Always exactly 90 degrees.
-      - Follow has no effect on separation angle.
-  - question: Why can't "hit lower, it always draws farther" be treated as a reliable rule?
-    options:
-      - Because cue speed and spin interact, so the same spin behaves differently at different speeds.
-      - Because draw shots are illegal in this course's rules.
-      - Because contact height has no effect on the cue ball.
-      - Because draw only works on angled shots.
-  - question: On a straight (in-line) stop shot, what should you expect, in simple terms?
-    options:
-      - The cue ball stays close to the point of impact, since there is no separation angle to consider.
-      - The cue ball always returns to the starting position.
-      - The cue ball always continues past the object ball.
-      - The result depends entirely on the tangent line.
 ---
 
 ## Stop / stun
@@ -92,8 +66,4 @@ Cue speed and spin interact. "Hit higher, it always goes farther forward"
 and "hit lower, it always draws farther" are both oversimplifications —
 the same spin at a different speed behaves differently.
 
-> **Diagram placeholder.** An approved diagram showing the stun/90-degree
-> reference, a follow path bending forward, and a draw path bending
-> backward is planned for this section. It is not yet stored in this
-> repository and has not been drawn here. It will be inserted once
-> supplied by the course designer.
+![Table diagram showing separation angle changing with contact height: centre-ball contact separates at 90 degrees, a high-ball (follow) contact separates at less than 90 degrees, and a low-ball (draw) contact separates at more than 90 degrees.](../../assets/teaching/week-06-vertical-spin.jpg)

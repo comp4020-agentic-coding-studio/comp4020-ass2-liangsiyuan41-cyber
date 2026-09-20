@@ -6,6 +6,7 @@ description: >
   path and the pocket.
 week: 4
 date: 2027-03-15
+slides: /slides/week-04-finding-the-angle.pdf
 objectives:
   - Visualise the object-ball path from the pocket back through the object ball.
   - Locate the contact point on the object ball using the ghost-ball reference.
@@ -34,31 +35,6 @@ play: >
 tableCheck: >
   Given several illustrated cut shots, identify the correct contact point
   or aiming option before playing the shot.
-quiz:
-  - question: Do you start reading an angled shot from the cue ball or from the pocket?
-    options:
-      - From the pocket, working back through the object ball to the cue ball.
-      - From the cue ball, working forward to the pocket.
-      - From the nearest cushion.
-      - It doesn't matter which end you start from.
-  - question: What does the ghost ball represent?
-    options:
-      - An imaginary cue ball touching the object ball at the true contact point, showing the aiming reference.
-      - The shadow cast by the object ball under table lighting.
-      - A second object ball placed for practice only.
-      - The final resting position of the cue ball.
-  - question: Which part of the Week 2 setup routine changes for an angled shot?
-    options:
-      - None of it — the same routine applies, only the aiming line changes.
-      - The grip becomes tighter.
-      - The stance is skipped for angled shots.
-      - The bridge hand switches sides.
-  - question: A cut shot looks like the cue ball will strike close to the centre of the object ball, but the required pocket line needs a thinner contact. What should the player adjust?
-    options:
-      - The aiming point, to strike closer to the edge of the object ball as the ghost-ball position requires.
-      - The grip pressure.
-      - The pocket being aimed at.
-      - Nothing — centre-ball contact is always correct.
 ---
 
 ## Finding the contact point
@@ -82,14 +58,6 @@ Start from the pocket, not the cue ball:
    doesn't change: stand and establish the aiming line, enter the stance,
    align the cue, lower into position, and use the same stable stroke from
    Week 3.
-
-> **Diagram placeholder.** An approved instructional diagram is planned for
-> this section, showing the object-ball path to the pocket, the cue-ball
-> aiming line, the contact point on the object ball, and the ghost-ball
-> position — progressing from a straight shot through small, medium and
-> larger-angle cuts. It is not yet stored in this repository, so it has not
-> been redrawn or reinterpreted here. It will be inserted once supplied by
-> the course designer.
 
 ## Think it through
 

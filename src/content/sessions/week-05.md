@@ -17,8 +17,8 @@ learn: >
   half-ball, thin) and the tangent line: a useful 90-degree reference for
   where a sliding cue ball separates from the object ball, not a fixed law.
 see: >
-  Placeholders stand in for a contact-thickness comparison and a
-  stun/follow/draw path comparison, pending approved diagrams.
+  A diagram compares the separation angle produced by centre-ball,
+  high-ball and low-ball contact after collision.
 think: >
   Prediction questions: which direction will the cue ball initially leave?
   Is this hit thick or thin? Which path best matches a stun shot?
@@ -28,31 +28,6 @@ play: >
 tableCheck: >
   Given several simple layouts, predict the approximate first cue-ball
   direction before playing each one.
-quiz:
-  - question: What's the main difference between a thick hit and a thin hit?
-    options:
-      - How much of the object ball's surface the cue ball actually contacts.
-      - How fast the cue ball is travelling.
-      - Which pocket the object ball is aimed at.
-      - The colour of the object ball.
-  - question: When does the approximately 90-degree tangent-line reference apply?
-    options:
-      - When the cue ball reaches the object ball in a roughly stun (sliding) state.
-      - On every shot, regardless of spin.
-      - Only on perfectly straight shots.
-      - Only when playing a thin hit.
-  - question: The cue ball leaves the tangent line, travels briefly along it, then curves forward. What does that suggest was on the ball at impact?
-    options:
-      - Forward spin (heading toward a follow shot).
-      - Backspin (heading toward a draw shot).
-      - No spin at all.
-      - Side spin only.
-  - question: Which statement best matches this week's core principle?
-    options:
-      - Predict where the cue ball will go before you hit, not just where the object ball goes.
-      - Always aim for the thickest possible contact.
-      - The tangent line is a fixed rule that applies to every shot.
-      - Cue-ball direction cannot be predicted before playing a shot.
 ---
 
 ## Contact thickness
@@ -79,6 +54,8 @@ object-ball path. Treat 90 degrees as a useful starting reference for this
 one situation — a stun-state cue ball — not a rule that applies to every
 shot regardless of spin.
 
+![Diagram of the separation angle between the object-ball path and the cue-ball path: with centre-ball contact the two paths separate at 90 degrees, a high-ball contact keeps the cue-ball path closer to the object-ball path (less than 90 degrees), and a low-ball contact keeps it closer to the incoming line (more than 90 degrees).](../../assets/teaching/week-05-separation-angle.jpg)
+
 ## Predict before you hit
 
 The core habit this week introduces isn't a formula — it's a habit:
@@ -97,12 +74,3 @@ the tangent line for a short distance right after impact, before the
 remaining spin bends the path forward or backward. Week 6 picks this up in
 full — for now, just notice that the tangent line is a starting point, not
 the whole story.
-
-> **Diagram placeholders.** Approved diagrams are planned for this section
-> and are not yet stored in this repository, so none have been drawn or
-> guessed at here. Pending diagrams:
-> - full / thick / half-ball / thin contact comparison
-> - object-ball path versus the tangent line
-> - stun / follow / draw path comparison
->
-> They will be inserted once supplied by the course designer.

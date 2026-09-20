@@ -31,31 +31,6 @@ play: >
 tableCheck: >
   Complete a short straight-shot consistency drill and identify one
   technical issue to improve.
-quiz:
-  - question: A student repeatedly misses the same straight shot to the left. Which is the most useful first thing to check?
-    options:
-      - Whether the cue is being steered sideways or the body is moving during delivery.
-      - Whether the pocket is the correct size.
-      - Whether the object ball is the correct colour.
-      - Whether the shot was played too slowly.
-  - question: What does the cue-line test mainly check for?
-    options:
-      - Whether the cue ball rebounds cleanly back along the same line after a straight strike.
-      - How hard the cue ball was struck.
-      - Whether the object ball was potted.
-      - How long the player took over the shot.
-  - question: Why stay down after impact instead of standing up immediately?
-    options:
-      - Standing up early can disturb the cue's line during or just after delivery.
-      - It has no effect on the shot; it is only a matter of style.
-      - It makes the cue ball travel further.
-      - It is required by official competition rules.
-  - question: In the suggested practice log (10 straight shots × 3 sets), what is the main purpose of recording made / missed left / missed right?
-    options:
-      - To notice a repeated error pattern, not to produce a grade.
-      - To rank students against each other.
-      - To calculate an official potting percentage for assessment.
-      - To decide how much side spin to add next time.
 ---
 
 ## Common errors to check for
